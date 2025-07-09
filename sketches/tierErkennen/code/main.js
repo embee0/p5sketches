@@ -6,11 +6,30 @@ function preload() {
   GUI.ladeSprites();
 }
 
+// function setup() {
+//   textAlign(LEFT);
+//   knn = new KNN(datenpunkte);
+//   GUI.erzeugeGUI();
+//   GUI.zeichneDatenpunkte(knn.datenpunkte);
+//   zeigeKlassifizierung = false;
+// }
+
 function setup() {
+  console.log("setup gestartet");
   textAlign(LEFT);
+  console.log("KNN?", typeof KNN);
+  console.log("datenpunkte?", typeof datenpunkte);
+  console.log("GUI?", typeof GUI);
+
   knn = new KNN(datenpunkte);
+  console.log("KNN-Instanz erzeugt");
+
   GUI.erzeugeGUI();
+  console.log("GUI erzeugt");
+
   GUI.zeichneDatenpunkte(knn.datenpunkte);
+  console.log("Datenpunkte gezeichnet");
+
   zeigeKlassifizierung = false;
 }
 
