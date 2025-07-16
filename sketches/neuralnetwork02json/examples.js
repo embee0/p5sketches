@@ -73,9 +73,9 @@ NN_EXAMPLES = [
       { id: "in1", bias: 1, x: 100, y: 150 },
       { id: "in2", bias: 1, x: 100, y: 250 },
       { id: "h1", bias: 1, x: 200, y: 100 },
-      { id: "h2", bias: 2, x: 200, y: 200 },
+      { id: "h2", bias: 1.5, x: 200, y: 200 },
       { id: "h3", bias: 1, x: 200, y: 300 },
-      { id: "out", bias: 1, x: 300, y: 200 },
+      { id: "out", bias: 0.8, x: 300, y: 200 },
     ],
     connections: [
       { src: "in1", dest: "h1", weight: 1 },
